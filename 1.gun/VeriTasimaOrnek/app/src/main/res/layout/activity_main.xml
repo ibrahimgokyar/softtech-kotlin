@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/twAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:paddingLeft="10dp"
+            android:text="@string/adi" />
+
+        <EditText
+            android:id="@+id/etAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/black">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/twSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:paddingLeft="10dp"
+            android:text="@string/soyadi" />
+
+        <EditText
+            android:id="@+id/etSoyadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@android:color/black">
+        </EditText>
+
+    </LinearLayout>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="GÖNDER"
+    android:id="@+id/btnGonder" />
+
+</LinearLayout>

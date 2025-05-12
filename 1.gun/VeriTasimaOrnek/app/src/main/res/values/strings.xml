@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VeriTasimaOrnek</string>
+    <string name="adi">ADINIZ : </string>
+    <string name="soyadi">SOYADINIZ : </string>
+</resources>
