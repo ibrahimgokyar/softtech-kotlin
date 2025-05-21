@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+ >
+    <data>
+     <variable
+         name="urun"
+         type="com.opendart.databindingornek.model.Urun" />
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        tools:context=".MainActivity"
+        android:layout_margin="10dp" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{urun.name}"
+        android:id="@+id/tvName"
+        android:textSize="16dp"
+       />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{urun.category}"
+            android:id="@+id/tvCategory"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{urun.price.toString()}"
+            android:id="@+id/tvPrice"
+            android:textColor="@{Integer.parseInt(urun.price.toString())>10 ? @color/kirmizi : @color/yesil}"
+            android:visibility="@{Integer.parseInt(urun.count.toString())>10 ? View.VISIBLE : View.GONE}"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+</layout>
